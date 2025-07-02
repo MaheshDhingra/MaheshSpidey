@@ -49,15 +49,15 @@ def upload():
     print("Attempting to create a new dataset version...")
     version = kaggle_cmd("version")
     if version.returncode == 0:
-        print("✅ Dataset version updated on Kaggle.")
+        print("Dataset version updated on Kaggle.")
         return
 
     print("⚠️ Versioning failed; trying initial dataset creation...")
     create = kaggle_cmd("create")
     if create.returncode == 0:
-        print("✅ Dataset created on Kaggle.")
+        print("Dataset created on Kaggle.")
     else:
-        print("❌ Kaggle upload failed.")
+        print("Kaggle upload failed.")
         print("STDOUT:", create.stdout)
         print("STDERR:", create.stderr)
 

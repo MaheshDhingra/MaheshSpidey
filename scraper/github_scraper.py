@@ -16,7 +16,7 @@ logging.basicConfig(filename=log_path, level=logging.INFO,
                     format='%(asctime)s:%(levelname)s:%(message)s')
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; MaheshScrapper/1.0; +https://maheshdhingra.xyz)"
+    "User-Agent": "Mozilla/5.0 (compatible; MaheshScrapper/1.1; +https://maheshdhingra.xyz)"
 }
 URL = "https://github.com/trending"
 
@@ -92,10 +92,10 @@ if __name__ == "__main__":
         repos, top_repo = scrape_github_trending()
 
         if args.top and top_repo:
-            print("\n🔥 Top Trending Repo Today 🔥")
+            print("\n Top Trending Repo Today")
             print(json.dumps(top_repo, indent=2))
     else:
-        print("⏰ Scheduler started. Scraping will run daily at 10:00 AM.")
+        print("Scheduler started. Scraping will run daily at 10:00 AM.")
         schedule.every().day.at("10:00").do(run_daily)
 
         while True:
