@@ -16,7 +16,7 @@ logging.basicConfig(filename=log_path, level=logging.INFO,
                     format='%(asctime)s:%(levelname)s:%(message)s')
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; MaheshScrapper/1.1; +https://maheshdhingra.xyz)"
+    "User-Agent": "Mozilla/5.0 (compatible; MaheshScrapper/1.1.0; +https://maheshdhingra.xyz)"
 }
 URL = "https://github.com/trending"
 

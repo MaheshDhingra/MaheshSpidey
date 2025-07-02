@@ -1,16 +1,16 @@
-# 🕸️ GitHub Trending Scraper
+# GitHub Trending Scraper
 
 A Python web scraper that fetches GitHub's trending repositories daily, respects `robots.txt`, and saves the data in a structured directory for analysis or public use.
 
 ---
 
-## 🎯 Objective
+## Objective
 
 Track trending repositories on GitHub daily and store them in structured JSON files for further analysis or open data sharing.
 
 ---
 
-## ⚙️ Setup
+## Setup
 
 ```bash
 # Clone the repo
@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### Run scraper once:
 
@@ -47,7 +47,7 @@ python scraper/github_scraper.py
 
 ---
 
-## 📁 Directory Structure
+## Directory Structure
 
 ```plaintext
 github-trending-scraper/
@@ -74,7 +74,7 @@ github-trending-scraper/
 
 ---
 
-## 🔒 Ethical Considerations
+## Ethical Considerations
 
 * Respects `robots.txt` before crawling
 * Uses a custom, identifiable User-Agent header
@@ -82,7 +82,7 @@ github-trending-scraper/
 
 ---
 
-## 📦 Additional Tools
+## Additional Tools
 
 * **`track_repo_growth.py`** — Tracks star growth for each repo over time
 * **`upload_to_kaggle.py`** — Automates uploading daily datasets to Kaggle
@@ -90,7 +90,7 @@ github-trending-scraper/
 
 ---
 
-## 💡 Future Improvements
+## Future Improvements
 
 * Add notifications for trending repo changes
 * Support scraping multiple GitHub trending languages or timeframes
@@ -99,4 +99,4 @@ github-trending-scraper/
 ---
 
 Feel free to contribute or open issues for bugs and feature requests!
-Happy scraping! 🕷️✨
+Happy scraping!
