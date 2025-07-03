@@ -1,4 +1,4 @@
-# MaheshSpidey 1.3.0
+# MaheshSpidey 1.4.2
 
 A Python web scraper that fetches trending repositories from GitHub and trending videos from YouTube daily. It stores the data in structured directories, respects `robots.txt`, and uploads the datasets to Kaggle.
 
@@ -26,16 +26,16 @@ pip install -r requirements.txt
 ## Project Structure
 
 ```bash
-github-trending-scraper/
+MaheshSpidey/
 ├── data/
 │   ├── github/
 │   │   ├── 2025-07-03/
-│   │   │   ├── trending.json     # GitHub trending repos
-│   │   │   └── top.json          # Top GitHub repo
-│   │   └── tracked/              # Historical growth tracker
+│   │   │   ├── trending.json
+│   │   │   └── top.json
+│   │   └── tracked/             
 │   ├── youtube/
 │   │   └── 2025-07-03/
-│   │       └── trending.json     # YouTube trending videos
+│   │       └── trending.json   
 ├── logs/
 │   ├── github/
 │   │   └── scraper.log
@@ -45,8 +45,10 @@ github-trending-scraper/
 │   ├── SpideyGithub/
 │   │   ├── github_scraper.py
 │   │   └── track_repo_growth.py
-    ├── SpideyAmazon/
+│   ├── SpideyAmazon/
 │   │   └── amazon_computer_category_scrapper.py.py 
+│   ├── SpideyLandslide/
+│   │   └── landslide_scrapper.py 
 │   └── SpideyYoutube/
 │       └── youtube_scraper.py
 ├── daily_run.py

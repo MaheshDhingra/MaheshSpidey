@@ -23,7 +23,7 @@ elif var == 3:
         words[0] + "+" + words[1] + "+" + words[2]
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; MaheshSpidey/1.3; +https://maheshdhingra.xyz)"
+    "User-Agent": "Mozilla/5.0 (compatible; MaheshSpidey/1.4; +https://maheshdhingra.xyz)"
 }
 
 r = requests.get(url, headers=HEADERS)

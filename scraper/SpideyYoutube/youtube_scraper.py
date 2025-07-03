@@ -13,7 +13,7 @@ logging.basicConfig(filename=log_path, level=logging.INFO,
                     format="%(asctime)s:%(levelname)s:%(message)s")
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; MaheshSpidey/1.3; +https://maheshdhingra.xyz)"
+    "User-Agent": "Mozilla/5.0 (compatible; MaheshSpidey/1.4; +https://maheshdhingra.xyz)"
 }
 URL = "https://www.youtube.com/feed/trending"
 
