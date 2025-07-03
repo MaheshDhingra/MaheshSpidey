@@ -1,4 +1,4 @@
-# 🕸️ GitHub + YouTube Trending Scraper
+# MaheshSpidey 1.3.0
 
 A Python web scraper that fetches trending repositories from GitHub and trending videos from YouTube daily. It stores the data in structured directories, respects `robots.txt`, and uploads the datasets to Kaggle.
 
@@ -36,11 +36,6 @@ github-trending-scraper/
 │   ├── youtube/
 │   │   └── 2025-07-03/
 │   │       └── trending.json     # YouTube trending videos
-├── kaggle_dataset/
-│   └── github/
-│       └── dataset-metadata.json
-│   └── youtube/
-│       └── dataset-metadata.json
 ├── logs/
 │   ├── github/
 │   │   └── scraper.log
@@ -49,11 +44,11 @@ github-trending-scraper/
 ├── scraper/
 │   ├── SpideyGithub/
 │   │   ├── github_scraper.py
-│   │   ├── track_repo_growth.py
-│   │   └── upload_to_kaggle.py
+│   │   └── track_repo_growth.py
+    ├── SpideyAmazon/
+│   │   └── amazon_computer_category_scrapper.py.py 
 │   └── SpideyYoutube/
-│       ├── youtube_scraper.py
-│       └── upload_to_kaggle.py
+│       └── youtube_scraper.py
 ├── daily_run.py
 ├── requirements.txt
 └── README.md
