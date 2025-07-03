@@ -11,12 +11,12 @@ from urllib.robotparser import RobotFileParser
 
 # Setup logging
 log_path = os.path.join("logs", "scraper.log")
-os.makedirs("logs", exist_ok=True)
+os.makedirs("logs/github/", exist_ok=True)
 logging.basicConfig(filename=log_path, level=logging.INFO,
                     format='%(asctime)s:%(levelname)s:%(message)s')
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; MaheshScrapper/1.1.0; +https://maheshdhingra.xyz)"
+    "User-Agent": "Mozilla/5.0 (compatible; MaheshSpidey/1.2; +https://maheshdhingra.xyz)"
 }
 URL = "https://github.com/trending"
 
@@ -61,19 +61,19 @@ def scrape_github_trending():
 
     # Save all repos
     today = datetime.now().strftime("%Y-%m-%d")
-    os.makedirs(f"data/{today}", exist_ok=True)
-    with open(f"data/{today}/trending.json", "w") as f:
+    os.makedirs(f"data/github/{today}", exist_ok=True)
+    with open(f"data/github/{today}/trending.json", "w") as f:
         json.dump(repos, f, indent=2)
 
     # Save top repo
     top_repo = None
     if repos:
         top_repo = max(repos, key=lambda r: int(r["stars"]))
-        with open(f"data/{today}/top.json", "w") as f:
+        with open(f"data/github/{today}/top.json", "w") as f:
             json.dump(top_repo, f, indent=2)
         logging.info(f"Top repo: {top_repo['name']} with {top_repo['stars']} stars")
 
-    logging.info(f"Scraped {len(repos)} repositories to data/{today}/trending.json")
+    logging.info(f"Scraped {len(repos)} repositories to data/github/{today}/trending.json")
     return repos, top_repo
 
 

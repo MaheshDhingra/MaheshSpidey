@@ -1,12 +1,12 @@
-# GitHub Trending Scraper
+# 🕸️ GitHub + YouTube Trending Scraper
 
-A Python web scraper that fetches GitHub's trending repositories daily, respects `robots.txt`, and saves the data in a structured directory for analysis or public use.
+A Python web scraper that fetches trending repositories from GitHub and trending videos from YouTube daily. It stores the data in structured directories, respects `robots.txt`, and uploads the datasets to Kaggle.
 
 ---
 
 ## Objective
 
-Track trending repositories on GitHub daily and store them in structured JSON files for further analysis or open data sharing.
+Track trending GitHub repositories and YouTube videos daily for open analysis, historical growth tracking, and data sharing.
 
 ---
 
@@ -23,80 +23,40 @@ pip install -r requirements.txt
 
 ---
 
-## Usage
-
-### Run scraper once:
+## Project Structure
 
 ```bash
-python scraper/github_scraper.py --today-only
-```
-
-### Print today's top trending repo:
-
-```bash
-python scraper/github_scraper.py --top
-```
-
-### Run scraper with daily scheduling (runs scraping at 10:00 AM daily):
-
-```bash
-python scraper/github_scraper.py
-```
-
-> *Note:* The scheduled run will keep the process running and scrape daily at 10:00 AM.
-
----
-
-## Directory Structure
-
-```plaintext
 github-trending-scraper/
 ├── data/
-│   ├── 2025-07-02/
-│   │   ├── trending.json     # Full list of trending repos for the day
-│   │   └── top.json          # Top starred repo for the day
-│   ├── 2025-07-03/
-│   │   ├── trending.json
-│   │   └── top.json
-│   └── tracked/              # Historical growth tracking per repo
-│       ├── microsoft_generative-ai-for-beginners.json
-│       └── ...
+│   ├── github/
+│   │   ├── 2025-07-03/
+│   │   │   ├── trending.json     # GitHub trending repos
+│   │   │   └── top.json          # Top GitHub repo
+│   │   └── tracked/              # Historical growth tracker
+│   ├── youtube/
+│   │   └── 2025-07-03/
+│   │       └── trending.json     # YouTube trending videos
+├── kaggle_dataset/
+│   └── github/
+│       └── dataset-metadata.json
+│   └── youtube/
+│       └── dataset-metadata.json
 ├── logs/
-│   └── scraper.log           # Log file for errors and events
+│   ├── github/
+│   │   └── scraper.log
+│   └── youtube/
+│       └── scraper.log
 ├── scraper/
-│   └── github_scraper.py     # Main scraper script with CLI & scheduling support
-├── track_repo_growth.py      # Script to track repo star growth over time
-├── upload_to_kaggle.py       # Script to upload datasets to Kaggle
-├── daily_run.py              # Script to run scraper, tracker, and uploader sequentially
-├── requirements.txt          # Python dependencies
-└── README.md                 # This documentation
+│   ├── SpideyGithub/
+│   │   ├── github_scraper.py
+│   │   ├── track_repo_growth.py
+│   │   └── upload_to_kaggle.py
+│   └── SpideyYoutube/
+│       ├── youtube_scraper.py
+│       └── upload_to_kaggle.py
+├── daily_run.py
+├── requirements.txt
+└── README.md
 ```
 
 ---
-
-## Ethical Considerations
-
-* Respects `robots.txt` before crawling
-* Uses a custom, identifiable User-Agent header
-* Handles errors and logs events for transparency
-
----
-
-## Additional Tools
-
-* **`track_repo_growth.py`** — Tracks star growth for each repo over time
-* **`upload_to_kaggle.py`** — Automates uploading daily datasets to Kaggle
-* **`daily_run.py`** — Runs the scraper, tracker, and Kaggle uploader in sequence
-
----
-
-## Future Improvements
-
-* Add notifications for trending repo changes
-* Support scraping multiple GitHub trending languages or timeframes
-* Integrate with dashboards or visualization tools
-
----
-
-Feel free to contribute or open issues for bugs and feature requests!
-Happy scraping!

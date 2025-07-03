@@ -5,10 +5,11 @@ from datetime import datetime
 
 KAGGLE_USERNAME = "maheshdhingra"
 DATASET_SLUG = "github-trending-daily"
-DATASET_DIR = "kaggle_dataset"
-TITLE = "GitHub Trending Repositories (Daily Scrape)"
-DESCRIPTION = "Trending repositories scraped daily from GitHub with metadata."
+DATASET_DIR = "kaggle_dataset/github/"
+TITLE = "SpideyGithub"
+DESCRIPTION = "SpideyGithub - Every day scrape's github data and upload here"
 LICENSES = [{"name": "CC0-1.0"}]
+
 
 def prepare_dataset_folder():
     """Populate DATASET_DIR with metadata and today's data files."""
@@ -34,13 +35,19 @@ def prepare_dataset_folder():
             with open(src, "rb") as fsrc, open(dst, "wb") as fdst:
                 fdst.write(fsrc.read())
 
+
 def kaggle_cmd(action):
-    """Run a kaggle CLI command; return subprocess.CompletedProcess."""
-    cmd = ["kaggle", "datasets", action, "-p", DATASET_DIR, "-m",
-           f"Update on {datetime.now().strftime('%Y-%m-%d')}"]
-    if action == "create":
-        cmd.insert(3, "-u")
-    return subprocess.run(cmd, capture_output=True, text=True)
+    today_str = datetime.now().strftime('%Y-%m-%d')
+    if action == "version":
+        return subprocess.run([
+            "kaggle", "datasets", "version", "-p", DATASET_DIR, "-m",
+            f"Update on {today_str}"
+        ], capture_output=True, text=True)
+    elif action == "create":
+        return subprocess.run([
+            "kaggle", "datasets", "create", "-p", DATASET_DIR, "-u", "--public"
+        ], capture_output=True, text=True)
+
 
 def upload():
     prepare_dataset_folder()
@@ -52,7 +59,7 @@ def upload():
         print("Dataset version updated on Kaggle.")
         return
 
-    print("⚠️ Versioning failed; trying initial dataset creation...")
+    print("Versioning failed; trying initial dataset creation...")
     create = kaggle_cmd("create")
     if create.returncode == 0:
         print("Dataset created on Kaggle.")
@@ -60,6 +67,7 @@ def upload():
         print("Kaggle upload failed.")
         print("STDOUT:", create.stdout)
         print("STDERR:", create.stderr)
+
 
 if __name__ == "__main__":
     upload()

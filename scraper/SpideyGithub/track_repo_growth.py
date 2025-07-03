@@ -4,8 +4,8 @@ from datetime import datetime
 
 def track():
     today = datetime.now().strftime("%Y-%m-%d")
-    data_path = f"data/{today}/trending.json"
-    tracked_dir = "data/tracked"
+    data_path = f"data/github/{today}/trending.json"
+    tracked_dir = "data/github/tracked"
     os.makedirs(tracked_dir, exist_ok=True)
 
     if not os.path.exists(data_path):
@@ -37,7 +37,7 @@ def track():
         with open(track_path, "w") as tf:
             json.dump(history, tf, indent=2)
 
-    print(f"✅ Tracked {len(repos)} repos.")
+    print(f"Tracked {len(repos)} repos.")
 
 if __name__ == "__main__":
     track()
