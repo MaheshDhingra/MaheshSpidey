@@ -14,8 +14,8 @@ Track trending GitHub repositories and YouTube videos daily for open analysis, h
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/github-trending-scraper.git
-cd github-trending-scraper
+git clone https://github.com/MaheshDhingra/MaheshSpidey.git
+cd MaheshSpidey
 
 # Install dependencies
 pip install -r requirements.txt
