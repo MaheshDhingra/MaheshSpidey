@@ -1,4 +1,4 @@
-# MaheshSpidey 1.4.2
+# MaheshSpidey 1.4.3
 
 A Python web scraper that fetches trending repositories from GitHub and trending videos from YouTube daily. It stores the data in structured directories, respects `robots.txt`, and uploads the datasets to Kaggle.
 
