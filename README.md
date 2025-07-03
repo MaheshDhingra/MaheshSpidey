@@ -1,4 +1,4 @@
-# MaheshSpidey 1.4.3
+# MaheshSpidey 1.5.3
 
 A Python web scraper that fetches trending repositories from GitHub and trending videos from YouTube daily. It stores the data in structured directories, respects `robots.txt`, and uploads the datasets to Kaggle.
 
@@ -29,28 +29,45 @@ pip install -r requirements.txt
 MaheshSpidey/
 ├── data/
 │   ├── github/
-│   │   ├── 2025-07-03/
-│   │   │   ├── trending.json
-│   │   │   └── top.json
-│   │   └── tracked/             
+│   │   ├── 2025-07-03-trending.json
+│   │   ├── 2025-07-03-top.json
+│   │   └── tracked/
 │   ├── youtube/
-│   │   └── 2025-07-03/
-│   │       └── trending.json   
+│   │   └── 2025-07-03-trending.json
+│   ├── landslides/
+│   │   └── 2025-07-03-landslides.json
+│   ├── ainews/
+│   │   └── 2025-07-03-news.json
+│   └── amazon/
+│       └── 2025-07-03-computers.json
+├── kaggle_dataset/
+│   └── github/
+│       └── dataset-metadata.json
+│   └── youtube/
+│       └── dataset-metadata.json
 ├── logs/
 │   ├── github/
 │   │   └── scraper.log
-│   └── youtube/
+│   ├── youtube/
+│   │   └── scraper.log
+│   ├── landslides/
+│   │   └── scraper.log
+│   └── ainews/
 │       └── scraper.log
 ├── scraper/
 │   ├── SpideyGithub/
 │   │   ├── github_scraper.py
-│   │   └── track_repo_growth.py
-│   ├── SpideyAmazon/
-│   │   └── amazon_computer_category_scrapper.py.py 
+│   │   ├── track_repo_growth.py
+│   │   └── upload_to_kaggle.py
+│   ├── SpideyYoutube/
+│   │   ├── youtube_scraper.py
+│   │   └── upload_to_kaggle.py
 │   ├── SpideyLandslide/
-│   │   └── landslide_scrapper.py 
-│   └── SpideyYoutube/
-│       └── youtube_scraper.py
+│   │   └── landslide_scrapper.py
+│   ├── SpideyAINews/
+│   │   └── ai_news_scraper.py
+│   └── SpideyAmazon/
+│       └── amazon_computer_category_scrapper.py
 ├── daily_run.py
 ├── requirements.txt
 └── README.md
