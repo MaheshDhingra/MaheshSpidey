@@ -13,7 +13,7 @@ logging.basicConfig(filename=log_path, level=logging.INFO,
                     format='%(asctime)s:%(levelname)s:%(message)s')
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; MaheshSpidey/1.5; +https://maheshdhingra.xyz)"
+    "User-Agent": "Mozilla/5.0 (compatible; MaheshSpidey/1.7; +https://maheshdhingra.xyz)"
 }
 URL = "https://en.wikipedia.org/wiki/List_of_landslides" 
 
