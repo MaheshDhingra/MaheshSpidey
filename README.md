@@ -1,4 +1,6 @@
-![Banner](https://hc-cdn.hel1.your-objectstorage.com/s/v3/359224e618d7650914d1c5e43f09c26dce6e74b3_index_-_mahesh__1_.png)
+<p align="center">
+  <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/359224e618d7650914d1c5e43f09c26dce6e74b3_index_-_mahesh__1_.png" alt="MaheshSpidey Banner" width="100%">
+</p>
 
 # MaheshSpidey 1.7.3
 
