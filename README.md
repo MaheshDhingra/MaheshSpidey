@@ -2,7 +2,7 @@
   <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/359224e618d7650914d1c5e43f09c26dce6e74b3_index_-_mahesh__1_.png" alt="MaheshSpidey Banner" width="100%">
 </p>
 
-# MaheshSpidey 1.7.3
+# MaheshSpidey 1.8.4
 
 A Python web scraper that fetches trending repositories from GitHub and trending videos from YouTube daily. It stores the data in structured directories, respects `robots.txt`, and uploads the datasets to Kaggle.
 
@@ -42,8 +42,18 @@ MaheshSpidey/
 │   │   └── 2025-07-03-landslides.json
 │   ├── ainews/
 │   │   └── 2025-07-03-news.json
-│   └── amazon/
-│       └── 2025-07-03-computers.json
+│   ├── amazon/
+│   │   └── 2025-07-03-computers.json
+│   ├── techmarket/
+│   │   └── 2025-07-03-data.json
+│   ├── companyfraud/
+│   │   └── 2025-07-03-data.json
+│   ├── governmentfights/
+│   │   └── 2025-07-03-data.json
+│   ├── movies1990/
+│   │   └── 2025-07-03-data.json
+│   └── songs2000/
+│       └── 2025-07-03-data.json
 ├── kaggle_dataset/
 │   └── github/
 │       └── dataset-metadata.json
@@ -58,6 +68,16 @@ MaheshSpidey/
 │   │   └── scraper.log
 │   └── ainews/
 │       └── scraper.log
+│   ├── techmarket/
+│   │   └── scraper.log
+│   ├── companyfraud/
+│   │   └── scraper.log
+│   ├── governmentfights/
+│   │   └── scraper.log
+│   ├── movies1990/
+│   │   └── scraper.log
+│   └── songs2000/
+│       └── scraper.log
 ├── scraper/
 │   ├── SpideyGithub/
 │   │   ├── github_scraper.py
@@ -70,8 +90,18 @@ MaheshSpidey/
 │   │   └── landslide_scrapper.py
 │   ├── SpideyAINews/
 │   │   └── ai_news_scraper.py
-│   └── SpideyAmazon/
-│       └── amazon_computer_category_scrapper.py
+│   ├── SpideyAmazon/
+│   │   └── amazon_computer_category_scrapper.py
+│   ├── SpideyTechMarket/
+│   │   └── tech_market_scraper.py
+│   ├── SpideyCompanyFraud/
+│   │   └── company_fraud_scraper.py
+│   ├── SpideyGovernmentFights/
+│   │   └── government_fights_scraper.py
+│   ├── SpideyMovies1990/
+│   │   └── movies_1990_scraper.py
+│   └── SpideySongs2000/
+│       └── songs_2000_scraper.py
 ├── daily_run.py
 ├── requirements.txt
 └── README.md
