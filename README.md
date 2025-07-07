@@ -4,7 +4,7 @@
 
 # MaheshSpidey 1.8.4
 
-A Python web scraper that fetches trending repositories from GitHub and trending videos from YouTube daily. It stores the data in structured directories, respects `robots.txt`, and uploads the datasets to Kaggle.
+A Python web scraper that fetches data from various sources including GitHub, YouTube, LinkedIn, Arxiv, and movie/song databases. It stores the data in structured directories, respects `robots.txt`, and uploads the datasets to Kaggle.
 
 Scraped data:
 https://www.kaggle.com/datasets/maheshdhingra/youtube-trending
@@ -39,79 +39,46 @@ pip install -r requirements.txt
 ```bash
 MaheshSpidey/
 ├── data/
+│   ├── arxiv_ai/
+│   │   └── 2025-07-08-papers.json
 │   ├── github/
-│   │   ├── 2025-07-03-trending.json
-│   │   ├── 2025-07-03-top.json
+│   │   ├── 2025-07-08/
+│   │   │   ├── top.json
+│   │   │   └── trending.json
 │   │   └── tracked/
-│   ├── youtube/
-│   │   └── 2025-07-03-trending.json
-│   ├── landslides/
-│   │   └── 2025-07-03-landslides.json
-│   ├── ainews/
-│   │   └── 2025-07-03-news.json
-│   ├── amazon/
-│   │   └── 2025-07-03-computers.json
-│   ├── techmarket/
-│   │   └── 2025-07-03-data.json
-│   ├── companyfraud/
-│   │   └── 2025-07-03-data.json
-│   ├── governmentfights/
-│   │   └── 2025-07-03-data.json
-│   ├── movies1990/
-│   │   └── 2025-07-03-data.json
-│   └── songs2000/
-│       └── 2025-07-03-data.json
-├── kaggle_dataset/
-│   └── github/
-│       └── dataset-metadata.json
-│   └── youtube/
-│       └── dataset-metadata.json
+│   │       ├── anthropics_prompt-eng-interactive-tutorial.json
+│   │       ├── CodeWithHarry_Sigma-Web-Dev-Course.json
+│   │       ├── commaai_openpilot.json
+│   │       ├── dockur_macos.json
+│   │       ├── ed-donner_llm_engineering.json
+│   │       ├── humanlayer_12-factor-agents.json
+│   │       ├── pocketbase_pocketbase.json
+│   │       ├── rustfs_rustfs.json
+│   │       ├── smallcloudai_refact.json
+│   │       └── th-ch_youtube-music.json
+│   ├── movies/
+│   │   ├── movies_0.csv
+│   │   ├── movies_1998.csv
+│   │   ├── movies_2017.csv
+│   │   └── movies_2018.csv
+│   └── songs_2000/
+│       └── songs_2000_data.csv
 ├── logs/
-│   ├── github/
-│   │   └── scraper.log
-│   ├── youtube/
-│   │   └── scraper.log
-│   ├── landslides/
-│   │   └── scraper.log
-│   └── ainews/
-│       └── scraper.log
-│   ├── techmarket/
-│   │   └── scraper.log
-│   ├── companyfraud/
-│   │   └── scraper.log
-│   ├── governmentfights/
-│   │   └── scraper.log
-│   ├── movies1990/
-│   │   └── scraper.log
-│   └── songs2000/
+│   └── youtube/
 │       └── scraper.log
 ├── scraper/
 │   ├── SpideyGithub/
 │   │   ├── github_scraper.py
-│   │   ├── track_repo_growth.py
-│   │   └── upload_to_kaggle.py
-│   ├── SpideyYoutube/
-│   │   ├── youtube_scraper.py
-│   │   └── upload_to_kaggle.py
-│   ├── SpideyLandslide/
-│   │   └── landslide_scrapper.py
-│   ├── SpideyAINews/
-│   │   └── ai_news_scraper.py
-│   ├── SpideyAmazon/
-│   │   └── amazon_computer_category_scrapper.py
-│   ├── SpideyTechMarket/
-│   │   └── tech_market_scraper.py
-│   ├── SpideyCompanyFraud/
-│   │   └── company_fraud_scraper.py
-│   ├── SpideyGovernmentFights/
-│   │   └── government_fights_scraper.py
-│   ├── SpideyMovies1990/
-│   │   └── movies_1990_scraper.py
-│   └── SpideySongs2000/
-│       └── songs_2000_scraper.py
-├── daily_run.py
+│   │   └── track_repo_growth.py
+│   ├── SpideyLinked/
+│   │   └── linked_tech_jobs.py
+│   ├── SpideyMovie/
+│   │   └── movie_scrapper.py
+│   ├── SpideyResearch/
+│   │   └── arixy-scrapper.py
+│   ├── SpideySongs2000/
+│   │   └── songs_2000_scraper.py
+│   └── SpideyYoutube/
+│       └── youtube_scraper.py
 ├── requirements.txt
 └── README.md
-```
-
----
