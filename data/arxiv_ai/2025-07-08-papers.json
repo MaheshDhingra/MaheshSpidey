@@ -1,0 +1,352 @@
+[
+  {
+    "title": "StepHint: Multi-level Stepwise Hints Enhance Reinforcement Learning to Reason",
+    "authors": "Kaiyi Zhang,Ang Lv,Jinpeng Li,Yongbo Wang,Feng Wang,Haoyuan Hu,Rui Yan",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02841",
+    "pdf_url": "https://arxiv.org/pdf/2507.02841.pdf"
+  },
+  {
+    "title": "Establishing Best Practices for Building Rigorous Agentic Benchmarks",
+    "authors": "Yuxuan Zhu,Tengjun Jin,Yada Pruksachatkun,Andy Zhang,Shu Liu,Sasha Cui,Sayash Kapoor,Shayne Longpre,Kevin Meng,Rebecca Weiss,Fazl Barez,Rahul Gupta,Jwala Dhamala,Jacob Merizian,Mario Giulianelli,Harry Coppock,Cozmin Ududec,Jasjeet Sekhon,Jacob Steinhardt,Antony Kellerman,Sarah Schwettmann,Matei Zaharia,Ion Stoica,Percy Liang,Daniel Kang",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02825",
+    "pdf_url": "https://arxiv.org/pdf/2507.02825.pdf"
+  },
+  {
+    "title": "Moral Responsibility or Obedience: What Do We Want from AI?",
+    "authors": "Joseph Boland",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02788",
+    "pdf_url": "https://arxiv.org/pdf/2507.02788.pdf"
+  },
+  {
+    "title": "KERAP: A Knowledge-Enhanced Reasoning Approach for Accurate Zero-shot Diagnosis Prediction Using Multi-agent LLMs",
+    "authors": "Yuzhang Xie,Hejie Cui,Ziyang Zhang,Jiaying Lu,Kai Shu,Fadi Nahab,Xiao Hu,Carl Yang",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02773",
+    "pdf_url": "https://arxiv.org/pdf/2507.02773.pdf"
+  },
+  {
+    "title": "Grounding Intelligence in Movement",
+    "authors": "Melanie Segado,Felipe Parodi,Jordan K. Matelsky,Michael L. Platt,Eva B. Dyer,Konrad P. Kording",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02771",
+    "pdf_url": "https://arxiv.org/pdf/2507.02771.pdf"
+  },
+  {
+    "title": "Knowledge Protocol Engineering: A New Paradigm for AI in Domain-Specific Knowledge Work",
+    "authors": "Guangwei Zhang",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02760",
+    "pdf_url": "https://arxiv.org/pdf/2507.02760.pdf"
+  },
+  {
+    "title": "Bourbaki: Self-Generated and Goal-Conditioned MDPs for Theorem Proving",
+    "authors": "Matthieu Zimmer,Xiaotong Ji,Rasul Tutunov,Anthony Bordg,Jun Wang,Haitham Bou Ammar",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02726",
+    "pdf_url": "https://arxiv.org/pdf/2507.02726.pdf"
+  },
+  {
+    "title": "Time-critical and confidence-based abstraction dropping methods",
+    "authors": "Robin Schmöcker,Lennart Kampmann,Alexander Dockhorn",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02703",
+    "pdf_url": "https://arxiv.org/pdf/2507.02703.pdf"
+  },
+  {
+    "title": "Detection of Disengagement from Voluntary Quizzes: An Explainable Machine Learning Approach in Higher Distance Education",
+    "authors": "Behnam Parsaeifard,Christof Imhof,Tansu Pancar,Ioan-Sorin Comsa,Martin Hlosta,Nicole Bergamin,Per Bergamin",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02681",
+    "pdf_url": "https://arxiv.org/pdf/2507.02681.pdf"
+  },
+  {
+    "title": "Think How to Think: Mitigating Overthinking with Autonomous Difficulty Cognition in Large Reasoning Models",
+    "authors": "Yongjiang Liu,Haoxi Li,Xiaosong Ma,Jie Zhang,Song Guo",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02663",
+    "pdf_url": "https://arxiv.org/pdf/2507.02663.pdf"
+  },
+  {
+    "title": "Hey AI, Generate Me a Hardware Code! Agentic AI-based Hardware Design & Verification",
+    "authors": "Deepak Narayan Gadde,Keerthan Kopparam Radhakrishna,Vaisakh Naduvodi Viswambharan,Aman Kumar,Djones Lettnin,Wolfgang Kunz,Sebastian Simon",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02660",
+    "pdf_url": "https://arxiv.org/pdf/2507.02660.pdf"
+  },
+  {
+    "title": "Decoupled Planning and Execution: A Hierarchical Reasoning Framework for Deep Search",
+    "authors": "Jiajie Jin,Xiaoxi Li,Guanting Dong,Yuyao Zhang,Yutao Zhu,Yang Zhao,Hongjin Qian,Zhicheng Dou",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02652",
+    "pdf_url": "https://arxiv.org/pdf/2507.02652.pdf"
+  },
+  {
+    "title": "Strategic Intelligence in Large Language Models: Evidence from evolutionary Game Theory",
+    "authors": "Kenneth Payne,Baptiste Alloui-Cros",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02618",
+    "pdf_url": "https://arxiv.org/pdf/2507.02618.pdf"
+  },
+  {
+    "title": "DynamiCare: A Dynamic Multi-Agent Framework for Interactive and Open-Ended Medical Decision-Making",
+    "authors": "Tianqi Shang,Weiqing He,Charles Zheng,Lingyao Li,Li Shen,Bingxin Zhao",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02616",
+    "pdf_url": "https://arxiv.org/pdf/2507.02616.pdf"
+  },
+  {
+    "title": "Responsibility Gap and Diffusion in Sequential Decision-Making Mechanisms",
+    "authors": "Junli Jiang,Pavel Naumov",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02582",
+    "pdf_url": "https://arxiv.org/pdf/2507.02582.pdf"
+  },
+  {
+    "title": "AI Research Agents for Machine Learning: Search, Exploration, and Generalization in MLE-bench",
+    "authors": "Edan Toledo,Karen Hambardzumyan,Martin Josifoski,Rishi Hazra,Nicolas Baldwin,Alexis Audran-Reiss,Michael Kuchnik,Despoina Magka,Minqi Jiang,Alisia Maria Lupidi,Andrei Lupu,Roberta Raileanu,Kelvin Niu,Tatiana Shavrina,Jean-Christophe Gagnon-Audet,Michael Shvartsman,Shagun Sodhani,Alexander H. Miller,Abhishek Charnalia,Derek Dunfield,Carole-Jean Wu,Pontus Stenetorp,Nicola Cancedda,Jakob Nicolaus Foerster,Yoram Bachrach",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02554",
+    "pdf_url": "https://arxiv.org/pdf/2507.02554.pdf"
+  },
+  {
+    "title": "Clarifying Before Reasoning: A Coq Prover with Structural Context",
+    "authors": "Yanzhen Lu,Hanbin Yang,Xiaodie Wang,Ge Zhang,Biao Li,Chenxu Fu,Chao Li,Yang Yuan,Andrew Chi-Chih Yao",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02541",
+    "pdf_url": "https://arxiv.org/pdf/2507.02541.pdf"
+  },
+  {
+    "title": "The Gauss-Markov Adjunction: Categorical Semantics of Residuals in Supervised Learning",
+    "authors": "Moto Kamiura",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02442",
+    "pdf_url": "https://arxiv.org/pdf/2507.02442.pdf"
+  },
+  {
+    "title": "An AI-native experimental laboratory for autonomous biomolecular engineering",
+    "authors": "Mingyu Wu,Zhaoguo Wang,Jiabin Wang,Zhiyuan Dong,Jingkai Yang,Qingting Li,Tianyu Huang,Lei Zhao,Mingqiang Li,Fei Wang,Chunhai Fan,Haibo Chen",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02379",
+    "pdf_url": "https://arxiv.org/pdf/2507.02379.pdf"
+  },
+  {
+    "title": "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation via LLM Agent",
+    "authors": "Bowen Chen,Zhao Wang,Shingo Takamatsu",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02353",
+    "pdf_url": "https://arxiv.org/pdf/2507.02353.pdf"
+  },
+  {
+    "title": "Iterated belief revision: from postulates to abilities",
+    "authors": "Paolo Liberatore",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02319",
+    "pdf_url": "https://arxiv.org/pdf/2507.02319.pdf"
+  },
+  {
+    "title": "Scaling LLM Planning: NL2FLOW for Parametric Problem Generation and Rigorous Evaluation",
+    "authors": "Jungkoo Kang",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02253",
+    "pdf_url": "https://arxiv.org/pdf/2507.02253.pdf"
+  },
+  {
+    "title": "Dilution, Diffusion and Symbiosis in Spatial Prisoner's Dilemma with Reinforcement Learning",
+    "authors": "Gustavo C. Mangold,Heitor C. M. Fernandes,Mendeli H. Vainstein",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02211",
+    "pdf_url": "https://arxiv.org/pdf/2507.02211.pdf"
+  },
+  {
+    "title": "Do Role-Playing Agents Practice What They Preach? Belief-Behavior Consistency in LLM-Based Simulations of Human Trust",
+    "authors": "Amogh Mannekote,Adam Davies,Guohao Li,Kristy Elizabeth Boyer,ChengXiang Zhai,Bonnie J Dorr,Francesco Pinto",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02197",
+    "pdf_url": "https://arxiv.org/pdf/2507.02197.pdf"
+  },
+  {
+    "title": "Data Diversification Methods In Alignment Enhance Math Performance In LLMs",
+    "authors": "Berkan Dokmeci,Qingyang Wu,Ben Athiwaratkun,Ce Zhang,Shuaiwen Leon Song,James Zou",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02173",
+    "pdf_url": "https://arxiv.org/pdf/2507.02173.pdf"
+  },
+  {
+    "title": "The Illusion of Fairness: Auditing Fairness Interventions with Audit Studies",
+    "authors": "Disa Sariola,Patrick Button,Aron Culotta,Nicholas Mattei",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02152",
+    "pdf_url": "https://arxiv.org/pdf/2507.02152.pdf"
+  },
+  {
+    "title": "What Neuroscience Can Teach AI About Learning in Continuously Changing Environments",
+    "authors": "Daniel Durstewitz,Bruno Averbeck,Georgia Koppe",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02103",
+    "pdf_url": "https://arxiv.org/pdf/2507.02103.pdf"
+  },
+  {
+    "title": "Measuring Scientific Capabilities of Language Models with a Systems Biology Dry Lab",
+    "authors": "Haonan Duan,Stephen Zhewen Lu,Caitlin Fiona Harrigan,Nishkrit Desai,Jiarui Lu,Michał Koziarski,Leonardo Cotta,Chris J. Maddison",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02083",
+    "pdf_url": "https://arxiv.org/pdf/2507.02083.pdf"
+  },
+  {
+    "title": "Reasoning on a Budget: A Survey of Adaptive and Controllable Test-Time Compute in LLMs",
+    "authors": "Mohammad Ali Alomrani,Yingxue Zhang,Derek Li,Qianyi Sun,Soumyasundar Pal,Zhanguang Zhang,Yaochen Hu,Rohan Deepak Ajwani,Antonios Valkanas,Raika Karimi,Peng Cheng,Yunzhou Wang,Pengyi Liao,Hanrui Huang,Bin Wang,Jianye Hao,Mark Coates",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02076",
+    "pdf_url": "https://arxiv.org/pdf/2507.02076.pdf"
+  },
+  {
+    "title": "HCVR: A Hybrid Approach with Correlation-aware Voting Rules for Feature Selection",
+    "authors": "Nikita Bhedasgaonkar,Rushikesh K. Joshi",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02073",
+    "pdf_url": "https://arxiv.org/pdf/2507.02073.pdf"
+  },
+  {
+    "title": "STELLA: Self-Evolving LLM Agent for Biomedical Research",
+    "authors": "Ruofan Jin,Zaixi Zhang,Mengdi Wang,Le Cong",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02004",
+    "pdf_url": "https://arxiv.org/pdf/2507.02004.pdf"
+  },
+  {
+    "title": "Point3R: Streaming 3D Reconstruction with Explicit Spatial Pointer Memory",
+    "authors": "Yuqi Wu,Wenzhao Zheng,Jie Zhou,Jiwen Lu",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02863",
+    "pdf_url": "https://arxiv.org/pdf/2507.02863.pdf"
+  },
+  {
+    "title": "LiteReality: Graphics-Ready 3D Scene Reconstruction from RGB-D Scans",
+    "authors": "Zhening Huang,Xiaoyang Wu,Fangcheng Zhong,Hengshuang Zhao,Matthias Nießner,Joan Lasenby",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02861",
+    "pdf_url": "https://arxiv.org/pdf/2507.02861.pdf"
+  },
+  {
+    "title": "Answer Matching Outperforms Multiple Choice for Language Model Evaluation",
+    "authors": "Nikhil Chandak,Shashwat Goel,Ameya Prabhu,Moritz Hardt,Jonas Geiping",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02856",
+    "pdf_url": "https://arxiv.org/pdf/2507.02856.pdf"
+  },
+  {
+    "title": "Subtyping in DHOL -- Extended preprint",
+    "authors": "Colin Rothgang,Florian Rabe",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02855",
+    "pdf_url": "https://arxiv.org/pdf/2507.02855.pdf"
+  },
+  {
+    "title": "MOTIF: Modular Thinking via Reinforcement Fine-tuning in LLMs",
+    "authors": "Purbesh Mitra,Sennur Ulukus",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02851",
+    "pdf_url": "https://arxiv.org/pdf/2507.02851.pdf"
+  },
+  {
+    "title": "USAD: An Unsupervised Data Augmentation Spatio-Temporal Attention Diffusion Network",
+    "authors": "Ying Yu,Hang Xiao,Siyao Li,Jiarui Li,Haotian Tang,Hanyu Liu,Chao Li",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02827",
+    "pdf_url": "https://arxiv.org/pdf/2507.02827.pdf"
+  },
+  {
+    "title": "DNN-Based Precoding in RIS-Aided mmWave MIMO Systems With Practical Phase Shift",
+    "authors": "Po-Heng Chou,Ching-Wen Chen,Wan-Jen Huang,Walid Saad,Yu Tsao,Ronald Y. Chang",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02824",
+    "pdf_url": "https://arxiv.org/pdf/2507.02824.pdf"
+  },
+  {
+    "title": "SynapseRoute: An Auto-Route Switching Framework on Dual-State Large Language Model",
+    "authors": "Wencheng Zhang,Shiqin Qiao,Lingjie Luo,Yinfeng Li,Chuanyang Zheng,Qian Xu,Meng Li,Yong Gui,Yijun He,Jianing Qiu,Jindong Hong,Jiankai Sun",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02822",
+    "pdf_url": "https://arxiv.org/pdf/2507.02822.pdf"
+  },
+  {
+    "title": "Self-Correction Bench: Revealing and Addressing the Self-Correction Blind Spot in LLMs",
+    "authors": "Ken Tsui",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02778",
+    "pdf_url": "https://arxiv.org/pdf/2507.02778.pdf"
+  },
+  {
+    "title": "Multi-agent Auditory Scene Analysis",
+    "authors": "Caleb Rascon,Luis Gato-Diaz,Eduardo García-Alarcón",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02755",
+    "pdf_url": "https://arxiv.org/pdf/2507.02755.pdf"
+  },
+  {
+    "title": "Fast and Simplex: 2-Simplicial Attention in Triton",
+    "authors": "Aurko Roy,Timothy Chou,Sai Surya Duvvuri,Sijia Chen,Jiecao Yu,Xiaodong Wang,Manzil Zaheer,Rohan Anil",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02754",
+    "pdf_url": "https://arxiv.org/pdf/2507.02754.pdf"
+  },
+  {
+    "title": "Synthesizable by Design: A Retrosynthesis-Guided Framework for Molecular Analog Generation",
+    "authors": "Shuan Chen,Gunwook Nam,Yousung Jung",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02752",
+    "pdf_url": "https://arxiv.org/pdf/2507.02752.pdf"
+  },
+  {
+    "title": "Linear Attention with Global Context: A Multipole Attention Mechanism for Vision and Physics",
+    "authors": "Alex Colagrande,Paul Caillon,Eva Feillet,Alexandre Allauzen",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02748",
+    "pdf_url": "https://arxiv.org/pdf/2507.02748.pdf"
+  },
+  {
+    "title": "Early Signs of Steganographic Capabilities in Frontier LLMs",
+    "authors": "Artur Zolkowski,Kei Nishimura-Gasparian,Robert McCarthy,Roland S. Zimmermann,David Lindner",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02737",
+    "pdf_url": "https://arxiv.org/pdf/2507.02737.pdf"
+  },
+  {
+    "title": "Meta SecAlign: A Secure Foundation LLM Against Prompt Injection Attacks",
+    "authors": "Sizhe Chen,Arman Zharmagambetov,David Wagner,Chuan Guo",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02735",
+    "pdf_url": "https://arxiv.org/pdf/2507.02735.pdf"
+  },
+  {
+    "title": "FairHuman: Boosting Hand and Face Quality in Human Image Generation with Minimum Potential Delay Fairness in Diffusion Models",
+    "authors": "Yuxuan Wang,Tianwei Cao,Huayu Zhang,Zhongjiang He,Kongming Liang,Zhanyu Ma",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02714",
+    "pdf_url": "https://arxiv.org/pdf/2507.02714.pdf"
+  },
+  {
+    "title": "APT: Adaptive Personalized Training for Diffusion Models with Limited Data",
+    "authors": "JungWoo Chae,Jiyoon Kim,JaeWoong Choi,Kyungyul Kim,Sangheum Hwang",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02687",
+    "pdf_url": "https://arxiv.org/pdf/2507.02687.pdf"
+  },
+  {
+    "title": "ASDA: Audio Spectrogram Differential Attention Mechanism for Self-Supervised Representation Learning",
+    "authors": "Junyu Wang,Tianrui Wang,Meng Ge,Longbiao Wang,Jianwu Dang",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02666",
+    "pdf_url": "https://arxiv.org/pdf/2507.02666.pdf"
+  },
+  {
+    "title": "Solving the Hubbard model with Neural Quantum States",
+    "authors": "Yuntian Gu,Wenrui Li,Heng Lin,Bo Zhan,Ruichen Li,Yifei Huang,Di He,Yantao Wu,Tao Xiang,Mingpu Qin,Liwei Wang,Dingshun Lv",
+    "abstract": "No abstract",
+    "abs_url": "https://arxiv.org/abs/2507.02644",
+    "pdf_url": "https://arxiv.org/pdf/2507.02644.pdf"
+  }
+]

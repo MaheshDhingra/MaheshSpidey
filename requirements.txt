@@ -1,3 +1,6 @@
 pandas
 requests
 beautifulsoup4
+selenium
+xlsxwriter
+fake-useragent
