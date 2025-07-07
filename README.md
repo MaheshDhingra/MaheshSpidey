@@ -6,8 +6,13 @@
 
 A Python web scraper that fetches trending repositories from GitHub and trending videos from YouTube daily. It stores the data in structured directories, respects `robots.txt`, and uploads the datasets to Kaggle.
 
-Scraped data: https://www.kaggle.com/datasets/maheshdhingra/scraped-data-from-maheshspidey
-
+Scraped data:
+https://www.kaggle.com/datasets/maheshdhingra/youtube-trending
+https://www.kaggle.com/datasets/maheshdhingra/research-papers
+https://www.kaggle.com/datasets/maheshdhingra/movies-year
+https://www.kaggle.com/datasets/maheshdhingra/song-year
+https://www.kaggle.com/datasets/maheshdhingra/github-top
+https://www.kaggle.com/datasets/maheshdhingra/github-trending
 ---
 
 ## Objective
