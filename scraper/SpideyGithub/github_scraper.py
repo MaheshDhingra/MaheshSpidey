@@ -95,9 +95,4 @@ if __name__ == "__main__":
             print("\n Top Trending Repo Today")
             print(json.dumps(top_repo, indent=2))
     else:
-        print("Scheduler started. Scraping will run daily at 10:00 AM.")
-        schedule.every().day.at("10:00").do(run_daily)
-
-        while True:
-            schedule.run_pending()
-            time.sleep(60)
+        scrape_github_trending()

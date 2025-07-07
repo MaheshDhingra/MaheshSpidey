@@ -1,0 +1,52 @@
+[
+  {
+    "name": "rustfs/rustfs",
+    "description": "\ud83d\ude80 High-performance distributed object storage for MinIO alternative.",
+    "stars": "1593"
+  },
+  {
+    "name": "anthropics/prompt-eng-interactive-tutorial",
+    "description": "Anthropic's Interactive Prompt Engineering Tutorial",
+    "stars": "15073"
+  },
+  {
+    "name": "th-ch/youtube-music",
+    "description": "YouTube Music Desktop App bundled with custom plugins",
+    "stars": "24602"
+  },
+  {
+    "name": "dockur/macos",
+    "description": "macOS inside a Docker container.",
+    "stars": "14808"
+  },
+  {
+    "name": "pocketbase/pocketbase",
+    "description": "Open Source realtime backend in 1 file",
+    "stars": "48516"
+  },
+  {
+    "name": "commaai/openpilot",
+    "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
+    "stars": "54530"
+  },
+  {
+    "name": "smallcloudai/refact",
+    "description": "AI Agent that handles engineering tasks end-to-end: integrates with developers\u2019 tools, plans, executes, and iterates until it achieves a successful result.",
+    "stars": "2466"
+  },
+  {
+    "name": "humanlayer/12-factor-agents",
+    "description": "What are the principles we can use to build LLM-powered software that is actually good enough to put in the hands of production customers?",
+    "stars": "6427"
+  },
+  {
+    "name": "ed-donner/llm_engineering",
+    "description": "Repo to accompany my mastering LLM engineering course",
+    "stars": "2587"
+  },
+  {
+    "name": "CodeWithHarry/Sigma-Web-Dev-Course",
+    "description": "Source Code for Sigma Web Development Course",
+    "stars": "9109"
+  }
+]
