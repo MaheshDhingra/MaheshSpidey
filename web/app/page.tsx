@@ -1,103 +1,86 @@
-import Image from "next/image";
+"use client";
+import React, { useEffect, useState } from "react";
+
+const DATA_PATHS = [
+  "arxiv_ai/2025-07-08-papers.json",
+  "github/2025-07-08/top.json",
+  "github/2025-07-08/trending.json",
+  "github/tracked/th-ch_youtube-music.json",
+  "github/tracked/pocketbase_pocketbase.json",
+  "github/tracked/rustfs_rustfs.json",
+  "github/tracked/smallcloudai_refact.json",
+  "github/tracked/dockur_macos.json",
+  "github/tracked/ed-donner_llm_engineering.json",
+  "github/tracked/humanlayer_12-factor-agents.json",
+  "github/tracked/anthropics_prompt-eng-interactive-tutorial.json",
+  "github/tracked/CodeWithHarry_Sigma-Web-Dev-Course.json",
+  "github/tracked/commaai_openpilot.json",
+  "movies/movies_0.csv",
+  "movies/movies_1998.csv",
+  "movies/movies_2017.csv",
+  "movies/movies_2018.csv",
+  "songs_2000/songs_2000_data.csv",
+];
+
+function Collapsible({ title, children }: { title: string; children: React.ReactNode }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div style={{ border: "1px solid #ddd", borderRadius: 8, marginBottom: 16, background: "#fafbfc" }}>
+      <button
+        onClick={() => setOpen((o) => !o)}
+        style={{
+          width: "100%",
+          textAlign: "left",
+          padding: 12,
+          fontWeight: 600,
+          fontSize: 18,
+          background: "#f5f6f7",
+          border: "none",
+          borderRadius: 8,
+          cursor: "pointer",
+        }}
+      >
+        {open ? "▼" : "▶"} {title}
+      </button>
+      {open && <div style={{ padding: 16, fontSize: 15 }}>{children}</div>}
+    </div>
+  );
+}
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const [data, setData] = useState<Record<string, any>>({});
+  const [loading, setLoading] = useState<Record<string, boolean>>({});
+  const [error, setError] = useState<Record<string, string>>({});
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+  useEffect(() => {
+    DATA_PATHS.forEach((p) => {
+      setLoading((l) => ({ ...l, [p]: true }));
+      fetch(`/api/${p}`)
+        .then((res) => {
+          if (!res.ok) throw new Error(res.statusText);
+          return res.json();
+        })
+        .then((d) => setData((dt) => ({ ...dt, [p]: d })))
+        .catch((e) => setError((er) => ({ ...er, [p]: e.message })))
+        .finally(() => setLoading((l) => ({ ...l, [p]: false })));
+    });
+  }, []);
+
+  return (
+    <main style={{ maxWidth: 900, margin: "40px auto", padding: 24, fontFamily: "Inter, sans-serif" }}>
+      <h1 style={{ fontSize: 36, fontWeight: 800, marginBottom: 8 }}>Spidey Data Dashboard</h1>
+      <p style={{ color: "#555", marginBottom: 32 }}>Fast, clean view of all your JSON/CSV data files.</p>
+      {DATA_PATHS.map((p) => (
+        <Collapsible key={p} title={p}>
+          {loading[p] && <span>Loading...</span>}
+          {error[p] && <span style={{ color: "#c00" }}>Error: {error[p]}</span>}
+          {!loading[p] && !error[p] && (
+            <pre style={{ whiteSpace: "pre-wrap", wordBreak: "break-all", background: "#f4f4f4", padding: 12, borderRadius: 6, fontSize: 14 }}>
+              {JSON.stringify(data[p], null, 2)}
+            </pre>
+          )}
+        </Collapsible>
+      ))}
+    </main>
   );
 }
