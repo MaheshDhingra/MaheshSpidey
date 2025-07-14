@@ -47,6 +47,59 @@ function Collapsible({ title, children }: { title: string; children: React.React
   );
 }
 
+function renderStructured(data: any) {
+  if (Array.isArray(data)) {
+    if (data.length === 0) return <span>No data</span>;
+    // If array of objects, render as table
+    if (typeof data[0] === "object" && data[0] !== null) {
+      const keys = Object.keys(data[0]);
+      return (
+        <div style={{ overflowX: "auto" }}>
+          <table style={{ borderCollapse: "collapse", width: "100%", fontSize: 14 }}>
+            <thead>
+              <tr>
+                {keys.map((k) => (
+                  <th key={k} style={{ borderBottom: "1px solid #ccc", textAlign: "left", padding: 6 }}>{k}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {data.map((row: any, i: number) => (
+                <tr key={i} style={{ background: i % 2 ? "#f7f8fa" : undefined }}>
+                  {keys.map((k) => (
+                    <td key={k} style={{ padding: 6, borderBottom: "1px solid #eee", verticalAlign: "top" }}>{row[k]}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+    }
+    // Otherwise, render as list
+    return (
+      <ul style={{ paddingLeft: 20 }}>
+        {data.map((item, i) => (
+          <li key={i}>{renderStructured(item)}</li>
+        ))}
+      </ul>
+    );
+  }
+  if (typeof data === "object" && data !== null) {
+    return (
+      <dl style={{ display: "grid", gridTemplateColumns: "max-content 1fr", gap: 8 }}>
+        {Object.entries(data).map(([k, v]) => (
+          <React.Fragment key={k}>
+            <dt style={{ fontWeight: 600 }}>{k}</dt>
+            <dd style={{ margin: 0 }}>{renderStructured(v)}</dd>
+          </React.Fragment>
+        ))}
+      </dl>
+    );
+  }
+  return <span>{String(data)}</span>;
+}
+
 export default function Home() {
   const [data, setData] = useState<Record<string, any>>({});
   const [loading, setLoading] = useState<Record<string, boolean>>({});
@@ -74,11 +127,7 @@ export default function Home() {
         <Collapsible key={p} title={p}>
           {loading[p] && <span>Loading...</span>}
           {error[p] && <span style={{ color: "#c00" }}>Error: {error[p]}</span>}
-          {!loading[p] && !error[p] && (
-            <pre style={{ whiteSpace: "pre-wrap", wordBreak: "break-all", background: "#f4f4f4", padding: 12, borderRadius: 6, fontSize: 14 }}>
-              {JSON.stringify(data[p], null, 2)}
-            </pre>
-          )}
+          {!loading[p] && !error[p] && renderStructured(data[p])}
         </Collapsible>
       ))}
     </main>
