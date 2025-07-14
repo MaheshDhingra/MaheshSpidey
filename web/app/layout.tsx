@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "SpideyMahesh Dashboard",
-  description: "Fast, clean view of all your JSON/CSV data files.",
+  description: "Fast, clean view of all scraped JSON/CSV data files.",
 };
 
 export default function RootLayout({

@@ -122,7 +122,7 @@ export default function Home() {
   return (
     <main style={{ maxWidth: 900, margin: "40px auto", padding: 24, fontFamily: "Inter, sans-serif" }}>
       <h1 style={{ fontSize: 36, fontWeight: 800, marginBottom: 8 }}>SpideyMahesh Dashboard</h1>
-      <p style={{ color: "#555", marginBottom: 32 }}>Fast, clean view of all your JSON/CSV data files.</p>
+      <p style={{ color: "#555", marginBottom: 32 }}>Fast, clean view of all scraped JSON/CSV data files.</p>
       {DATA_PATHS.map((p) => (
         <Collapsible key={p} title={p}>
           {loading[p] && <span>Loading...</span>}
