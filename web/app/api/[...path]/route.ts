@@ -4,8 +4,14 @@ import fs from 'fs/promises';
 
 const DATA_ROOT = path.resolve(process.cwd(), '../data');
 
-export async function GET(req: NextRequest, { params }: { params: { path: string[] } }) {
-  const relPath = params.path.join('/');
+interface Context {
+  params: {
+    path: string[];
+  };
+}
+
+export async function GET(req: NextRequest, context: Context) {
+  const relPath = context.params.path ? context.params.path.join('/') : '';
   const filePath = path.join(DATA_ROOT, relPath);
   try {
     const ext = path.extname(filePath);
@@ -13,7 +19,6 @@ export async function GET(req: NextRequest, { params }: { params: { path: string
     if (ext === '.json') {
       return NextResponse.json(JSON.parse(file));
     } else if (ext === '.csv') {
-      // Simple CSV to JSON conversion
       const [header, ...rows] = file.split(/\r?\n/).filter(Boolean);
       const keys = header.split(',');
       const data = rows.map(row => {
@@ -24,7 +29,7 @@ export async function GET(req: NextRequest, { params }: { params: { path: string
     } else {
       return new NextResponse('Unsupported file type', { status: 415 });
     }
-  } catch (e: any) {
+  } catch { // Removed _e: unknown
     return new NextResponse('File not found', { status: 404 });
   }
-} 
+}

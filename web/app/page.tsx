@@ -47,7 +47,7 @@ function Collapsible({ title, children }: { title: string; children: React.React
   );
 }
 
-function renderStructured(data: any) {
+function renderStructured(data: unknown) {
   if (Array.isArray(data)) {
     if (data.length === 0) return <span>No data</span>;
     // If array of objects, render as table
@@ -64,10 +64,10 @@ function renderStructured(data: any) {
               </tr>
             </thead>
             <tbody>
-              {data.map((row: any, i: number) => (
+              {data.map((row: Record<string, unknown>, i: number) => (
                 <tr key={i} style={{ background: i % 2 ? "#f7f8fa" : undefined }}>
                   {keys.map((k) => (
-                    <td key={k} style={{ padding: 6, borderBottom: "1px solid #eee", verticalAlign: "top" }}>{row[k]}</td>
+                    <td key={k} style={{ padding: 6, borderBottom: "1px solid #eee", verticalAlign: "top" }}>{String(row[k])}</td>
                   ))}
                 </tr>
               ))}
@@ -101,7 +101,7 @@ function renderStructured(data: any) {
 }
 
 export default function Home() {
-  const [data, setData] = useState<Record<string, any>>({});
+  const [data, setData] = useState<Record<string, unknown>>({});
   const [loading, setLoading] = useState<Record<string, boolean>>({});
   const [error, setError] = useState<Record<string, string>>({});
 
